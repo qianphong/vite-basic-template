@@ -1,5 +1,5 @@
 import NProgress from 'nprogress'
-import { UserModule } from '@/types'
+import { type UserModule } from '@/types'
 
 NProgress.configure({ showSpinner: false })
 

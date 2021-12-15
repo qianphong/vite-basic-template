@@ -1,4 +1,4 @@
-import { UserModule } from '@/types'
+import { type UserModule } from '@/types'
 
 export const install: UserModule = ({ router }) => {
   const appTitle = import.meta.env.VITE_APP_TITLE || ''
@@ -8,7 +8,7 @@ export const install: UserModule = ({ router }) => {
       return title.value ? `${title.value}-${appTitle}` : appTitle
     }),
   )
-  router.beforeEach((route) => {
+  router.beforeEach(route => {
     title.value = route.meta.title as string
   })
 }
