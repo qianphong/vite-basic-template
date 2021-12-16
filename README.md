@@ -2,7 +2,7 @@
 
 Vue 3 + Typescript + Vite
 
-[Preview](https://github.com/qianphong)
+[Preview](https://qianphong.github.io/vite-basic-template/)
 
 ## Features
 
