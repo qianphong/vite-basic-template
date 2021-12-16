@@ -6,7 +6,6 @@ const props = defineProps({ name: String })
     <div class="mb-5 font-bold">
       😀Hello,<span class="text-3xl ml-2">{{ props.name }}</span>
     </div>
-    <span></span>
     <router-link to="/">back</router-link>
   </div>
 </template>

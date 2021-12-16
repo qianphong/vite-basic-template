@@ -14,3 +14,12 @@ Vue 3 + Typescript + Vite
 ## Recommended IDE Setup
 
 - [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+
+## Tips
+
+1. 使用自定义组件推荐 PascalCase
+
+```diff
+- <hello-world />
++ <HelloWorld />
+```

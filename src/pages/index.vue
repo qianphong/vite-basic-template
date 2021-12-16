@@ -9,7 +9,8 @@ function go() {
 <template>
   <div>
     <img class="mx-auto" src="@/assets/logo.png" alt="" />
-    <div class="my-4">Index View <icon-custom-face /></div>
+    <div class="my-4">Index View <IconCustomFace /></div>
+    <BasicHello />
     <div class="h-8 leading-8 my-4">
       <input
         v-model.trim="name"
@@ -30,7 +31,7 @@ function go() {
         text="white lg"
         @click="go"
       >
-        Go <icon-mdi-google-downasaur class="animate-bounce align-middle" />
+        Go <IconMdiGoogleDownasaur class="animate-bounce align-middle" />
       </button>
     </div>
   </div>
