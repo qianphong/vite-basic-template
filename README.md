@@ -2,6 +2,8 @@
 
 Vue 3 + Typescript + Vite
 
+[Preview](https://qianphong.github.io/vite-basic-template/)
+
 ## Features
 
 - [Windi CSS](https://github.com/windicss/windicss) + [vite-plugin-windicss](https://github.com/antfu/vite-plugin-windicss) 原子样式
