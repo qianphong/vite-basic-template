@@ -7,10 +7,6 @@ declare module 'vue' {
     BasicHello: typeof import('./../components/Basic/Hello.vue')['default']
     BasicWorld: typeof import('./../components/Basic/World.vue')['default']
     DarkToggle: typeof import('./../components/DarkToggle.vue')['default']
-    IconCustomFace: typeof import('~icons/custom/face')['default']
-    IconCustomMoon: typeof import('~icons/custom/moon')['default']
-    IconCustomSun: typeof import('~icons/custom/sun')['default']
-    IconMdiGoogleDownasaur: typeof import('~icons/mdi/google-downasaur')['default']
     PageFooter: typeof import('./../components/PageFooter.vue')['default']
   }
 }
