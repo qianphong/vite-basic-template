@@ -5,12 +5,7 @@
       <router-link to="/" class="bg-green-400 px-4 py-2 text-white">
         返回首页
       </router-link>
-      <div class="mt-5">
-        <dark-toggle />
-        <div class="mt-5 mx-auto text-center opacity-25 text-sm">
-          [NotFound Layout]
-        </div>
-      </div>
+      <PageFooter name="NotFound" class="mt-5" />
     </div>
   </div>
 </template>
