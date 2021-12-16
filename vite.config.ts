@@ -1,6 +1,7 @@
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import VueJsx from '@vitejs/plugin-vue-jsx'
 import Pages from 'vite-plugin-pages'
 import Layouts from 'vite-plugin-vue-layouts'
 import WindiCSS from 'vite-plugin-windicss'
@@ -13,6 +14,7 @@ import { FileSystemIconLoader } from 'unplugin-icons/loaders'
 export default defineConfig({
   plugins: [
     vue(),
+    VueJsx(),
     WindiCSS(),
     Pages(),
     Layouts({
@@ -24,8 +26,9 @@ export default defineConfig({
     }),
     Components({
       resolvers: [
-        IconsResolver({ prefix: 'icon', customCollections: 'custom' }),
+        IconsResolver({ prefix: 'Icon', customCollections: 'custom' }),
       ],
+      directoryAsNamespace: true,
       dts: 'src/types/components.d.ts',
     }),
     Icons({
