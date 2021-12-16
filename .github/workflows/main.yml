@@ -1,0 +1,22 @@
+name: Build and Deploy
+on: push
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+      - uses: actions/checkout@v2.4
+
+      - name: Install pnpm
+        run: npm i -g pnpm
+
+      - name: Install and Build
+        run: pnpm i && pnpm run build
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.7
+        with:
+          branch: gh-pages
+          token: ${{ secrets.GH_TOKEN }}
+          folder: dist
