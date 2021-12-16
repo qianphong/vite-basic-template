@@ -1,0 +1,1 @@
+import{_ as t}from"./index.a3a4886a.js";import{o as a,a as c}from"./vendor.5743d96c.js";var e={};const o={},r={class:"text-xl my-4"};function _(n,s){return a(),c("div",r,"\u9875\u9762\u4E0D\u5B58\u5728")}typeof e=="function"&&e(o);var l=t(o,[["render",_]]);export{l as default};
